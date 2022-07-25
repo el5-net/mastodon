@@ -3,7 +3,7 @@ name: Build amd64 Image
 on:
   push:
     branches:
-      - el5-main
+      - EL5-Main
 
 jobs:
   docker-build:
