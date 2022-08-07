@@ -1,3 +1,79 @@
+Mastodon fork for [El5](https://el5.net)
+===
+
+[![DockerHub](https://img.shields.io/docker/pulls/maisuier/mastodon.svg?logo=docker&color=2496ED)](https://hub.docker.com/r/maisuier/mastodon)
+[![Build Universal Image](https://github.com/maisuimiao/mastodon/actions/workflows/docker-build.yml/badge.svg)](https://github.com/maisuimiao/mastodon/actions/workflows/docker-build-main.yml)
+[![Build AMD64 Image](https://github.com/maisuimiao/mastodon/actions/workflows/docker-build-amd64.yml/badge.svg)](https://github.com/maisuimiao/mastodon/actions/workflows/docker-build-dev.yml)
+
+## Highlighted Features
+
+- Maximum toot word count increased to 5000
+- A bunch of awesome themes.
+- The voting options increased to 16
+
+## Specifications
+
+### Version Control
+This is a rebase fork of `tootsuite/mastodon`, all local changes are rebased on the top. To pull the latest commits of this repo, use `git reset --hard origin/main` instead of `git pull`. If you are going to develop based on this fork, I strongly recommend you always [cherry-pick](https://git-scm.com/docs/git-cherry-pick) your commits to the `HEAD` of this branch.
+
+### Docker Images
+The Docker images are listed [here](https://hub.docker.com/r/maisuier/mastodon/tags).
+
+<table>
+    <tr>
+        <td>Tag</td>
+        <td>Architecture</td>
+        <td>Remarks</td>
+    </tr>
+    <tr>
+        <td><code>latest</code></td>
+        <td>amd64/arm64</td>
+        <td rowspan=3>The latest image build from <code>main</code> branch (<strong>unstable sometimes</strong>).</td>
+    </tr>
+    <tr>
+        <td><code>latest-arm64</code></td>
+        <td>arm64</td>
+    </tr>
+    <tr>
+        <td><code>latest-amd64</code></td>
+        <td>amd64</td>
+    </tr>
+    <tr>
+        <td><code>sha-*</code></td>
+        <td>amd64/arm64</td>
+        <td rowspan=3>The image build from commit with the specified SHA (<strong>unstable</strong>).</td>
+    </tr>
+    <tr>
+        <td><code>sha-*-arm64</code></td>
+        <td>arm64</td>
+    </tr>
+    <tr>
+        <td><code>sha-*-amd64</code></td>
+        <td>amd64</td>
+    </tr>
+    <tr>
+        <td><code>YY.MM.DD</code></td>
+        <td>amd64/arm64</td>
+        <td rowspan=3>The image build from release. Normally a release was made every time rebase merging upstream code (<strong>stable</strong>).</td>
+    </tr>
+    <tr>
+        <td><code>YY.MM.DD-arm64</code></td>
+        <td>arm64</td>
+    </tr>
+    <tr>
+        <td><code>YY.MM.DD-amd64</code></td>
+        <td>amd64</td>
+    </tr>
+</table>
+
+Readme referenced: [littlefox.rest](https://github.com/mashirozx/mastodon)
+
+***
+*Follows the original README*
+***
+
+
+
 ![Mastodon](https://i.imgur.com/NhZc40l.png)
 ========
 
