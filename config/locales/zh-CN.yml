@@ -1559,6 +1559,9 @@ zh-CN:
     mastodon-light: Mastodon（亮色主题）
     modern-dark: Modern Dark（暗色主题）
     modern-light: Modern Light（亮色主题）
+    elephant: Elephant（暗色主题）
+    elephant-contrast: Elephant（高对比度）
+    elephant-light: Elephant（亮色主题）
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"
