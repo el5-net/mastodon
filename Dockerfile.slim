@@ -1,11 +1,13 @@
 FROM ruby:3.0-slim-bullseye
 
 ENV DEBIAN_FRONTEND=noninteractive
+ARG NODE_MAJOR=20
+ARG NODE_OPTIONS=--openssl-legacy-provider
 
 # Install Node.js
 RUN apt-get update && \
     apt install -y --no-install-recommends curl && \
-    curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && \
+    curl -fsSL https://deb.nodesource.com/setup_$NODE_MAJOR.x | bash - && \
     apt-get install -y nodejs && \
     rm -rf /share/doc && \
     apt-get -y --auto-remove purge curl && \
