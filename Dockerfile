@@ -2,11 +2,7 @@
 # This needs to be bookworm-slim because the Ruby image is built on bookworm-slim
 ARG NODE_VERSION="20.6-bookworm-slim"
 
-<<<<<<< HEAD
-FROM ghcr.io/moritzheiber/ruby-jemalloc:3.0.6-slim as ruby
-=======
 FROM ghcr.io/moritzheiber/ruby-jemalloc:3.2.2-slim as ruby
->>>>>>> mastodon/stable-4.2
 FROM node:${NODE_VERSION} as build
 
 COPY --link --from=ruby /opt/ruby /opt/ruby

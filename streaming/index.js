@@ -750,10 +750,7 @@ const startServer = async () => {
    * @param {any} req
    * @param {function(string, string): void} output
    * @param {undefined | function(string[], SubscriptionListener): void} attachCloseHandler
-<<<<<<< HEAD
-=======
    * @param {'websocket' | 'eventsource'} destinationType
->>>>>>> mastodon/stable-4.2
    * @param {boolean=} needsFiltering
    * @returns {SubscriptionListener}
    */
@@ -766,11 +763,8 @@ const startServer = async () => {
       // TODO: Replace "string"-based delete payloads with object payloads:
       const encodedPayload = typeof payload === 'object' ? JSON.stringify(payload) : payload;
 
-<<<<<<< HEAD
-=======
       messagesSent.labels({ type: destinationType }).inc(1);
 
->>>>>>> mastodon/stable-4.2
       log.silly(req.requestId, `Transmitting for ${accountId}: ${event} ${encodedPayload}`);
       output(event, encodedPayload);
     };
@@ -965,10 +959,7 @@ const startServer = async () => {
         }).catch(err => {
           releasePgConnection();
           log.error(err);
-<<<<<<< HEAD
-=======
           releasePgConnection();
->>>>>>> mastodon/stable-4.2
         });
       });
     };
@@ -1077,32 +1068,9 @@ const startServer = async () => {
 
   app.use(api);
 
-<<<<<<< HEAD
-  app.get('/metrics', (req, res) => server.getConnections((err, count) => {
-    res.writeHeader(200, { 'Content-Type': 'application/openmetrics-text; version=1.0.0; charset=utf-8' });
-    res.write('# TYPE connected_clients gauge\n');
-    res.write('# HELP connected_clients The number of clients connected to the streaming server\n');
-    res.write(`connected_clients ${count}.0\n`);
-    res.write('# TYPE connected_channels gauge\n');
-    res.write('# HELP connected_channels The number of Redis channels the streaming server is subscribed to\n');
-    res.write(`connected_channels ${Object.keys(subs).length}.0\n`);
-    res.write('# TYPE pg_pool_total_connections gauge\n');
-    res.write('# HELP pg_pool_total_connections The total number of clients existing within the pool\n');
-    res.write(`pg_pool_total_connections ${pgPool.totalCount}.0\n`);
-    res.write('# TYPE pg_pool_idle_connections gauge\n');
-    res.write('# HELP pg_pool_idle_connections The number of clients which are not checked out but are currently idle in the pool\n');
-    res.write(`pg_pool_idle_connections ${pgPool.idleCount}.0\n`);
-    res.write('# TYPE pg_pool_waiting_queries gauge\n');
-    res.write('# HELP pg_pool_waiting_queries The number of queued requests waiting on a client when all clients are checked out\n');
-    res.write(`pg_pool_waiting_queries ${pgPool.waitingCount}.0\n`);
-    res.write('# EOF\n');
-    res.end();
-  }));
-=======
   api.use(setRequestId);
   api.use(setRemoteAddress);
   api.use(allowCrossDomain);
->>>>>>> mastodon/stable-4.2
 
   api.use(authenticationMiddleware);
   api.use(errorMiddleware);
@@ -1302,11 +1270,7 @@ const startServer = async () => {
    * @typedef WebSocketSession
    * @property {any} socket
    * @property {any} request
-<<<<<<< HEAD
-   * @property {Object.<string, { listener: SubscriptionListener, stopHeartbeat: function(): void }>} subscriptions
-=======
    * @property {Object.<string, { channelName: string, listener: SubscriptionListener, stopHeartbeat: function(): void }>} subscriptions
->>>>>>> mastodon/stable-4.2
    */
 
   /**

@@ -2,8 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-<<<<<<< HEAD
-=======
 ## [4.2.0] - 2023-09-21
 
 The following changelog entries focus on changes visible to users, administrators, client developers or federated software developers, but there has also been a lot of code modernization, refactoring, and tooling work, in particular by [@danielmbrasil](https://github.com/danielmbrasil), [@mjankowski](https://github.com/mjankowski), [@nschonni](https://github.com/nschonni), [@renchap](https://github.com/renchap), and [@takayamaki](https://github.com/takayamaki).
@@ -296,7 +294,6 @@ The following changelog entries focus on changes visible to users, administrator
 - Fix streaming API not being usable without `DATABASE_URL` ([Gargron](https://github.com/mastodon/mastodon/pull/23960))
 - Fix external authentication not running onboarding code for new users ([ClearlyClaire](https://github.com/mastodon/mastodon/pull/23458))
 
->>>>>>> mastodon/stable-4.2
 ## [4.1.8] - 2023-09-19
 
 ### Fixed
@@ -310,13 +307,8 @@ The following changelog entries focus on changes visible to users, administrator
 
 ### Security
 
-<<<<<<< HEAD
-- Fix missing HTML sanitization in translation API (CVE-2023-42452)
-- Fix incorrect domain name normalization (CVE-2023-42451)
-=======
 - Fix missing HTML sanitization in translation API (CVE-2023-42452, [GHSA-2693-xr3m-jhqr](https://github.com/mastodon/mastodon/security/advisories/GHSA-2693-xr3m-jhqr))
 - Fix incorrect domain name normalization (CVE-2023-42451, [GHSA-v3xf-c9qf-j667](https://github.com/mastodon/mastodon/security/advisories/GHSA-v3xf-c9qf-j667))
->>>>>>> mastodon/stable-4.2
 
 ## [4.1.7] - 2023-09-05
 
@@ -350,11 +342,7 @@ The following changelog entries focus on changes visible to users, administrator
 
 ### Fixed
 
-<<<<<<< HEAD
-- Fix moderation interface for remote instances with a .zip TLD ([ClearlyClaire](https://github.com/mastodon/mastodon/pull/25886))
-=======
 - Fix moderation interface for remote instances with a .zip TLD ([ClearlyClaire](https://github.com/mastodon/mastodon/pull/25885))
->>>>>>> mastodon/stable-4.2
 - Fix remote accounts being possibly persisted to database with incomplete protocol values ([ClearlyClaire](https://github.com/mastodon/mastodon/pull/25886))
 - Fix trending publishers table not rendering correctly on narrow screens ([vmstan](https://github.com/mastodon/mastodon/pull/25945))
 
