@@ -35,8 +35,8 @@ jobs:
           pull: true
           push: true
           build-args: |
-            VARIANT=3.0-bullseye
-            NODE_VERSION=14
+            VARIANT=3.2-bullseye
+            NODE_VERSION=20
           cache-from: type=registry,ref=maisuier/mastodon:dev
           cache-to: type=inline
           tags: |
