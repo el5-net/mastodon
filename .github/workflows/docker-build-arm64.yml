@@ -1,9 +1,9 @@
-name: Build Universal Image
+name: Build Custom Universal Image
 
 on:
   push:
     branches:
-      - EL5-Main
+      - '*'
 
 jobs:
   docker-build:

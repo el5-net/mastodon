@@ -1,9 +1,9 @@
-name: Build Dev Image
+name: Build Custom Dev Image
 
 on:
   push:
     branches:
-      - EL5-Main
+      - '*'
 
 jobs:
   docker-build:

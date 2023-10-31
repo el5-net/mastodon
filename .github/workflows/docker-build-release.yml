@@ -1,4 +1,4 @@
-name: Build Image for Release
+name: Build Custom Image for Release
 
 on:
   release:
