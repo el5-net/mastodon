@@ -6,9 +6,9 @@ class Trends::Statuses < Trends::Base
   BATCH_SIZE = 100
 
   self.default_options = {
-    threshold: 5,
-    review_threshold: 3,
-    score_halflife: 1.hour.freeze,
+    threshold: 2,
+    review_threshold: 1,
+    score_halflife: 6.hours.freeze,
     decay_threshold: 0.3,
   }
 
