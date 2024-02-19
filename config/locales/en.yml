@@ -1739,6 +1739,12 @@ en:
     elephant: Elephant (Dark)
     elephant-contrast: Elephant (High contrast)
     elephant-light: Elephant (Light)
+    mastodon-dark-topbar: Mastodon (Dark Topbar)
+    mastodon-dark-bottombar: Mastodon (Dark Bottombar)
+    contrast-topbar: Mastodon (High contrast Topbar)
+    contrast-bottombar: Mastodon (High contrast Bottombar)
+    mastodon-light-topbar: Mastodon (Light Topbar)
+    mastodon-light-bottombar: Mastodon (Light Bottombar)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

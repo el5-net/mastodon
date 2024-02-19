@@ -6,3 +6,9 @@ modern-light: styles/modern-light.scss
 elephant: styles/elephant.scss
 elephant-contrast: styles/elephant-contrast.scss
 elephant-light: styles/elephant-light.scss
+mastodon-dark-topbar: styles/mastodon-dark-topbar.scss
+mastodon-dark-bottombar: styles/mastodon-dark-bottombar.scss
+contrast-topbar: styles/contrast-topbar.scss
+contrast-bottombar: styles/contrast-bottombar.scss
+mastodon-light-topbar: styles/mastodon-light-topbar.scss
+mastodon-light-bottombar: styles/mastodon-light-bottombar.scss

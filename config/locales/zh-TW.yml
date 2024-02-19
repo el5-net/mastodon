@@ -1707,6 +1707,12 @@ zh-TW:
     contrast: Mastodon（高對比）
     default: Mastodon（深色）
     mastodon-light: Mastodon（亮色）
+    mastodon-dark-topbar: Mastodon（頂欄深色）
+    mastodon-dark-bottombar: Mastodon（底欄深色）
+    contrast-topbar: Mastodon（頂欄高對比）
+    contrast-bottombar: Mastodon（底欄高對比）
+    mastodon-light-topbar: Mastodon（頂欄亮色）
+    mastodon-light-bottombar: Mastodon（底欄亮色）
   time:
     formats:
       default: "%Y 年 %b 月 %d 日 %H:%M"

@@ -1701,6 +1701,12 @@ zh-HK:
     contrast: 高對比
     default: 萬象
     mastodon-light: 萬象（亮色主題）
+    mastodon-dark-topbar: Mastodon（頂欄）
+    mastodon-dark-bottombar: Mastodon（底欄）
+    contrast-topbar: Mastodon（頂欄高對比）
+    contrast-bottombar: Mastodon（底欄高對比）
+    mastodon-light-topbar: Mastodon（頂欄亮色主題）
+    mastodon-light-bottombar: Mastodon（底欄亮色主題）
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"
