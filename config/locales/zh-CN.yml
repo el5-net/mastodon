@@ -1708,11 +1708,11 @@ zh-CN:
     mastodon-bird-ui-light: Mastodon Bird UI (明亮)
     mastodon-bird-ui-contrast: Mastodon Bird UI (高对比度)
     mastodon-dark-topbar: Mastodon（顶栏暗色主题）
-    mastodon-dark-bottombar: Mastodon（底栏暗色主题）
-    contrast-topbar: Mastodon（顶栏高对比度）
-    contrast-bottombar: Mastodon（底栏高对比度）
     mastodon-light-topbar: Mastodon（顶栏亮色主题）
+    contrast-topbar: Mastodon（顶栏高对比度）
+    mastodon-dark-bottombar: Mastodon（底栏暗色主题）
     mastodon-light-bottombar: Mastodon（底栏亮色主题）
+    contrast-bottombar: Mastodon（底栏高对比度）
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

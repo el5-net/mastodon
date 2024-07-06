@@ -1701,18 +1701,18 @@ zh-HK:
     contrast: 高對比
     default: 萬象
     mastodon-light: 萬象（亮色主題）
-    mastodon-dark-topbar: Mastodon（頂欄）
-    mastodon-dark-bottombar: Mastodon（底欄）
-    contrast-topbar: Mastodon（頂欄高對比）
-    contrast-bottombar: Mastodon（底欄高對比）
     modern-dark: 現代風暗色
     modern-light: 現代風亮色
     modern-contrast: 現代風（高對比）
     mastodon-bird-ui-dark: Mastodon Bird UI（黑暗）
     mastodon-bird-ui-light: Mastodon Bird UI（明亮）
     mastodon-bird-ui-contrast: Mastodon Bird UI（高對比）
+    mastodon-dark-topbar: Mastodon（頂欄暗色主題）
     mastodon-light-topbar: Mastodon（頂欄亮色主題）
+    contrast-topbar: Mastodon（頂欄高對比）
+    mastodon-dark-bottombar: Mastodon（底欄暗色主題）
     mastodon-light-bottombar: Mastodon（底欄亮色主題）
+    contrast-bottombar: Mastodon（底欄高對比）
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"
