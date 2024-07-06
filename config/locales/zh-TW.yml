@@ -1709,6 +1709,9 @@ zh-TW:
     mastodon-light: Mastodon（亮色）
     mastodon-dark-topbar: Mastodon（頂欄深色）
     mastodon-dark-bottombar: Mastodon（底欄深色）
+    modern-dark: 現代風暗色
+    modern-light: 現代風亮色
+    modern-contrast: 現代風（高對比）
     contrast-topbar: Mastodon（頂欄高對比）
     contrast-bottombar: Mastodon（底欄高對比）
     mastodon-light-topbar: Mastodon（頂欄亮色）
