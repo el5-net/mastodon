@@ -1701,12 +1701,12 @@ zh-CN:
     contrast: Mastodon（高对比度）
     default: Mastodon（暗色主题）
     mastodon-light: Mastodon（亮色主题）
-    elephant: Elephant（暗色主题）
-    elephant-contrast: Elephant（高对比度）
-    elephant-light: Elephant（亮色主题）
     modern-dark: 现代风暗色
     modern-light: 现代风亮色
     modern-contrast: 现代风（高对比度）
+    mastodon-bird-ui-dark: Mastodon Bird UI (黑暗)
+    mastodon-bird-ui-light: Mastodon Bird UI (明亮)
+    mastodon-bird-ui-contrast: Mastodon Bird UI (高对比度)
     mastodon-dark-topbar: Mastodon（顶栏暗色主题）
     mastodon-dark-bottombar: Mastodon（底栏暗色主题）
     contrast-topbar: Mastodon（顶栏高对比度）

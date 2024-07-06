@@ -1739,12 +1739,12 @@ en:
     contrast: Mastodon (High contrast)
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
-    elephant: Elephant (Dark)
-    elephant-contrast: Elephant (High contrast)
-    elephant-light: Elephant (Light)
     modern-dark: Modern Dark
     modern-light: Modern Light
     modern-contrast: Modern Contrast
+    mastodon-bird-ui-dark: Mastodon Bird UI (Tumma)
+    mastodon-bird-ui-light: Mastodon Bird UI (Vaalea)
+    mastodon-bird-ui-contrast: Mastodon Bird UI (Korkea kontrasti)
     mastodon-dark-topbar: Mastodon (Dark Topbar)
     mastodon-dark-bottombar: Mastodon (Dark Bottombar)
     contrast-topbar: Mastodon (High contrast Topbar)

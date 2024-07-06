@@ -2,11 +2,11 @@ default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
 modern-dark: styles/modern-dark.scss
-elephant: styles/elephant.scss
-elephant-contrast: styles/elephant-contrast.scss
-elephant-light: styles/elephant-light.scss
 modern-light: styles/modern-light.scss
 modern-contrast: styles/modern-contrast.scss
+mastodon-bird-ui-dark: styles/mastodon-bird-ui-dark.scss
+mastodon-bird-ui-light: styles/mastodon-bird-ui-light.scss
+mastodon-bird-ui-contrast: styles/mastodon-bird-ui-contrast.scss
 mastodon-dark-topbar: styles/mastodon-dark-topbar.scss
 mastodon-dark-bottombar: styles/mastodon-dark-bottombar.scss
 contrast-topbar: styles/contrast-topbar.scss
