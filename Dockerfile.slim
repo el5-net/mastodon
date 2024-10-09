@@ -4,6 +4,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 ARG NODE_MAJOR=18
 #ARG NODE_OPTIONS=--openssl-legacy-provider
 
+# 启用 corepack
+RUN corepack enable && corepack prepare yarn@4.5.0 --activate
+
 # Install Node.js
 RUN apt-get update && \
     apt install -y --no-install-recommends curl && \
@@ -51,23 +54,28 @@ ENV RAILS_SERVE_STATIC_FILES="true"
 ENV BIND="0.0.0.0"
 
 # Build mastodon, and set permissions
+# 更新系统包和必要依赖
 RUN apt-get update && \
     apt-get -y --no-install-recommends install \
       apt-utils build-essential git libicu-dev libidn11-dev \
       libpq-dev libprotobuf-dev protobuf-compiler shared-mime-info \
-      libssl1.1 libpq5 imagemagick ffmpeg libyaml-0-2 \
+      libssl3 libpq5 imagemagick ffmpeg libyaml-0-2 \
       file ca-certificates tzdata libreadline8 gcc tini && \
+    # 链接目录、安装 bundler 和 npm 最新版
     ln -s /opt/mastodon /mastodon && \
     gem install bundler && \
     npm install -g npm@latest && \
-    npm install -g yarn && \
+    # 安装指定的 Yarn 版本
     cd /opt/mastodon && \
+    corepack prepare yarn@4.5.0 --activate && \
     bundle config set --local deployment 'true' && \
     bundle config set --local without 'development test' && \
     bundle config set silence_root_warning true && \
     bundle install -j"$(nproc)" && \
     yarn install --pure-lockfile && \
+    # 预编译资源
     OTP_SECRET=precompile_placeholder SECRET_KEY_BASE=precompile_placeholder bundle exec rails assets:precompile && \
+    # 清理缓存和不必要的依赖
     rm -rf /opt/mastodon/node_modules/.cache && \
     chown -R mastodon:mastodon /opt/mastodon && \
     npm cache clean --force && \
@@ -76,7 +84,7 @@ RUN apt-get update && \
       git libicu-dev libidn11-dev libpq-dev libprotobuf-dev \
       protobuf-compiler shared-mime-info gcc build-essential && \
     apt-get -y --no-install-recommends install \
-      libssl1.1 libpq5 imagemagick ffmpeg libjemalloc2 \
+      libssl3 libpq5 imagemagick ffmpeg libjemalloc2 \
 	    libicu67 libprotobuf23 libidn11 libyaml-0-2 \
 	    ca-certificates tzdata libreadline8 && \
     apt-get clean && \
