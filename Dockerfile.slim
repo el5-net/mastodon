@@ -4,14 +4,15 @@ ENV DEBIAN_FRONTEND=noninteractive
 ARG NODE_MAJOR=18
 #ARG NODE_OPTIONS=--openssl-legacy-provider
 
-# 启用 corepack
-RUN corepack enable && corepack prepare yarn@4.5.0 --activate
-
 # Install Node.js
 RUN apt-get update && \
     apt install -y --no-install-recommends curl && \
     curl -fsSL https://deb.nodesource.com/setup_$NODE_MAJOR.x | bash - && \
     apt-get install -y nodejs && \
+    # 安装 corepack
+    npm install -g corepack && \
+    # 启用 corepack
+    corepack enable && corepack prepare yarn@4.5.0 --activate && \
     rm -rf /share/doc && \
     apt-get -y --auto-remove purge curl && \
     apt-get clean && \
