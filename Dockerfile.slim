@@ -8,6 +8,7 @@ RUN apt-get update && \
     apt install -y --no-install-recommends curl && \
     curl -fsSL https://deb.nodesource.com/setup_$NODE_MAJOR.x | bash - && \
     apt-get install -y nodejs && \
+    npm install -g corepack && \  # 安装 corepack
     corepack enable && \  # 启用 corepack
     corepack prepare yarn@stable --activate && \  # 可选，激活指定版本的 yarn
     rm -rf /share/doc && \
