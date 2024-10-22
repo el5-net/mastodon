@@ -27,6 +27,7 @@ jobs:
       tags: |
         type=pep440,pattern={{raw}}
         type=pep440,pattern=v{{major}}.{{minor}}
+        type=pep440,pattern=v{{major}}.{{minor}}.{{patch}}.post{{build}}
     secrets: inherit
 
   build-image-streaming:
@@ -48,4 +49,5 @@ jobs:
       tags: |
         type=pep440,pattern={{raw}}
         type=pep440,pattern=v{{major}}.{{minor}}
+        type=pep440,pattern=v{{major}}.{{minor}}.{{patch}}.post{{build}}
     secrets: inherit
