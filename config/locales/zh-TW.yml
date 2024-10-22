@@ -1789,6 +1789,10 @@ zh-TW:
     mastodon-dark-bottombar: Mastodon（底欄暗色主題）
     mastodon-light-bottombar: Mastodon（底欄亮色主題）
     contrast-bottombar: Mastodon（底欄高對比）
+    tangerineui: Tangerine UI（柑橘）
+    tangerineui-cherry: Tangerine UI（櫻桃）
+    tangerineui-lagoon: Tangerine UI（碧藍）
+    tangerineui-purple: Tangerine UI（風信子）
   time:
     formats:
       default: "%Y 年 %b 月 %d 日 %H:%M"

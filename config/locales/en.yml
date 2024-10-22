@@ -1818,6 +1818,10 @@ en:
     mastodon-dark-bottombar: Mastodon (Dark Bottombar)
     mastodon-light-bottombar: Mastodon (Light Bottombar)
     contrast-bottombar: Mastodon (High contrast Bottombar)
+    tangerineui: Tangerine UI
+    tangerineui-cherry: Tangerine UI (Cherry)
+    tangerineui-lagoon: Tangerine UI (Lagoon)
+    tangerineui-purple: Tangerine UI (Purple)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
