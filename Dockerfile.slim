@@ -61,7 +61,6 @@ RUN apt-get update && \
     ln -s /opt/mastodon /mastodon && \
     gem install bundler && \
     npm install -g npm@latest && \
-    npm install -g yarn && \
     cd /opt/mastodon && \
     bundle config set --local deployment 'true' && \
     bundle config set --local without 'development test' && \
