@@ -156,10 +156,6 @@ jobs:
           flavor: ${{ inputs.flavor }}
           tags: ${{ inputs.tags }}
           labels: ${{ inputs.labels }}
-          
-      - id: vars
-        run: |
-          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
 
       - name: Create manifest list and push
         working-directory: ${{ runner.temp }}/digests
