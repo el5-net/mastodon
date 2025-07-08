@@ -1,4 +1,4 @@
-@import 'mastodon-light/variables';
-@import 'application';
-@import 'mastodon-light/diff';
-@import 'mastodon-no-more-sidebar/topbar';
+@use 'mastodon-light/variables';
+@use 'application' as *;
+@use 'mastodon-light/diff';
+@use 'mastodon-no-more-sidebar/topbar';

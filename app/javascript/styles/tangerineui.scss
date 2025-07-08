@@ -1,2 +1,2 @@
-@import 'application';
-@import 'tangerineui/tangerineui.scss';
+@use 'application' as *;
+@use 'tangerineui/tangerineui.scss';

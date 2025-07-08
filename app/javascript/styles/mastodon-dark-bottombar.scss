@@ -1,2 +1,2 @@
-@import 'application';
-@import 'mastodon-no-more-sidebar/bottombar';
+@use 'application' as *;
+@use 'mastodon-no-more-sidebar/bottombar';
