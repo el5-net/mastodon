@@ -7,12 +7,6 @@ modern-contrast: styles/modern-contrast.scss
 mastodon-bird-ui-dark: styles/mastodon-bird-ui-dark.scss
 mastodon-bird-ui-light: styles/mastodon-bird-ui-light.scss
 mastodon-bird-ui-contrast: styles/mastodon-bird-ui-contrast.scss
-mastodon-dark-topbar: styles/mastodon-dark-topbar.scss
-mastodon-light-topbar: styles/mastodon-light-topbar.scss
-contrast-topbar: styles/contrast-topbar.scss
-mastodon-dark-bottombar: styles/mastodon-dark-bottombar.scss
-mastodon-light-bottombar: styles/mastodon-light-bottombar.scss
-contrast-bottombar: styles/contrast-bottombar.scss
 tangerineui: styles/tangerineui.scss
 tangerineui-purple: styles/tangerineui-purple.scss
 tangerineui-cherry: styles/tangerineui-cherry.scss

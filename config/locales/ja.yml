@@ -1890,13 +1890,7 @@ ja:
     contrast: Mastodon (ハイコントラスト)
     default: Mastodon (ダーク)
     mastodon-light: Mastodon (ライト)
-    system: 自動 (システムのテーマを使用)
-    mastodon-dark-topbar: Mastodon (トップバーダーク)
-    mastodon-dark-bottombar: Mastodon (ボトムバーダーク)
-    contrast-topbar: Mastodon (トップバーハイコントラスト)
-    contrast-bottombar: Mastodon (ボトムバーハイコントラスト)
-    mastodon-light-topbar: Mastodon (トップバーライト)
-    mastodon-light-bottombar: Mastodon (ボトムバーライト)
+    system: 自動 (システムのテーマを使用))
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"
