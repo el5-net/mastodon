@@ -1,6 +1,6 @@
-@import 'mastodon/variables';
-@import 'application';
-@import 'modern/style';
+@use 'mastodon/variables';
+@use 'application';
+@use 'modern/style';
 
 .layout-multiple-columns .column {
 	flex-grow: 1;
