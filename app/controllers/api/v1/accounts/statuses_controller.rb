@@ -31,8 +31,8 @@ class Api::V1::Accounts::StatusesController < Api::BaseController
         params_slice(:max_id, :since_id, :min_id)
       )
     else
-      # 固定 5 条
-      preload_collection(filtered_statuses.limit(5), Status)
+      # 未登录固定展示 5 条
+      preload_collection(AccountStatusesFilter.new(@account, nil, params).results.limit(5), Status)
     end
   end
 
