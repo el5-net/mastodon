@@ -23,12 +23,17 @@ class Api::V1::Accounts::StatusesController < Api::BaseController
   end
 
   def preloaded_account_statuses
-    preload_collection_paginated_by_id(
-      AccountStatusesFilter.new(@account, current_account, params).results,
-      Status,
-      limit_param(DEFAULT_STATUSES_LIMIT),
-      params_slice(:max_id, :since_id, :min_id)
-    )
+    if user_signed_in?
+      preload_collection_paginated_by_id(
+        AccountStatusesFilter.new(@account, current_account, params).results,
+        Status,
+        limit_param(DEFAULT_STATUSES_LIMIT),
+        params_slice(:max_id, :since_id, :min_id)
+      )
+    else
+      # 未登录固定展示 5 条
+      preload_collection(AccountStatusesFilter.new(@account, nil, params).results.limit(5), Status)
+    end
   end
 
   def pagination_params(core_params)
