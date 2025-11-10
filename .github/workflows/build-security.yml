@@ -9,7 +9,6 @@ permissions:
 jobs:
   compute-suffix:
     runs-on: ubuntu-latest
-    if: github.repository == 'el5-net/mastodon'
     steps:
       - id: version_vars
         env:
