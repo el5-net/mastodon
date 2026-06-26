@@ -2193,9 +2193,9 @@ en:
     title: The terms of service of %{domain} are changing
   themes:
     default: Mastodon
-    mastodon-bird-ui-dark: Mastodon Bird UI (Tumma)
-    mastodon-bird-ui-light: Mastodon Bird UI (Vaalea)
-    mastodon-bird-ui-contrast: Mastodon Bird UI (Korkea kontrasti)
+    mastodon-bird-ui-auto: "Mastodon Bird UI"
+    mastodon-bird-ui-accessible: "Mastodon Bird UI (Accessible)"
+    mastodon-bird-ui-accessible-plus: "Mastodon Bird UI (Accessible Plus)"
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

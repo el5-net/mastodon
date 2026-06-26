@@ -2143,9 +2143,9 @@ zh-CN:
     title: "%{domain} 更新了服务条款"
   themes:
     default: Mastodon
-    mastodon-bird-ui-dark: Mastodon Bird UI (黑暗)
-    mastodon-bird-ui-light: Mastodon Bird UI (明亮)
-    mastodon-bird-ui-contrast: Mastodon Bird UI (高对比度)
+    mastodon-bird-ui-auto: "Mastodon Bird UI (自动切换深浅配色)"
+    mastodon-bird-ui-accessible: "Mastodon Bird UI (无障碍/高对比度)"
+    mastodon-bird-ui-accessible-plus: "Mastodon Bird UI (无障碍增强)"
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"
