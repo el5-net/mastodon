@@ -2193,9 +2193,6 @@ en:
     title: The terms of service of %{domain} are changing
   themes:
     default: Mastodon
-    modern-dark: Modern Dark
-    modern-light: Modern Light
-    modern-contrast: Modern Contrast
     mastodon-bird-ui-dark: Mastodon Bird UI (Tumma)
     mastodon-bird-ui-light: Mastodon Bird UI (Vaalea)
     mastodon-bird-ui-contrast: Mastodon Bird UI (Korkea kontrasti)

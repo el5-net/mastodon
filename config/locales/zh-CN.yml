@@ -2143,9 +2143,6 @@ zh-CN:
     title: "%{domain} 更新了服务条款"
   themes:
     default: Mastodon
-    modern-dark: 现代风暗色
-    modern-light: 现代风亮色
-    modern-contrast: 现代风（高对比度）
     mastodon-bird-ui-dark: Mastodon Bird UI (黑暗)
     mastodon-bird-ui-light: Mastodon Bird UI (明亮)
     mastodon-bird-ui-contrast: Mastodon Bird UI (高对比度)
