@@ -2014,10 +2014,6 @@ en:
     mastodon-bird-ui-dark: Mastodon Bird UI (Tumma)
     mastodon-bird-ui-light: Mastodon Bird UI (Vaalea)
     mastodon-bird-ui-contrast: Mastodon Bird UI (Korkea kontrasti)
-    tangerineui: Tangerine UI
-    tangerineui-cherry: Tangerine UI (Cherry)
-    tangerineui-lagoon: Tangerine UI (Lagoon)
-    tangerineui-purple: Tangerine UI (Purple)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

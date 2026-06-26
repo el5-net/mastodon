@@ -1684,10 +1684,6 @@ zh-HK:
     mastodon-bird-ui-dark: Mastodon Bird UI（黑暗）
     mastodon-bird-ui-light: Mastodon Bird UI（明亮）
     mastodon-bird-ui-contrast: Mastodon Bird UI（高對比）
-    tangerineui: Tangerine UI（柑橘）
-    tangerineui-cherry: Tangerine UI（櫻桃）
-    tangerineui-lagoon: Tangerine UI（碧海遙遠）
-    tangerineui-purple: Tangerine UI（風信子）
   time:
     formats:
       default: "%Y年%b月%d日 %H:%M"
