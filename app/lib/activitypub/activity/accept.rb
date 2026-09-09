@@ -44,17 +44,6 @@ class ActivityPub::Activity::Accept < ActivityPub::Activity
     ActivityPub::CollectionRawDistributionWorker.perform_async(activity_json, collection_item.collection_id)
   end
 
-  def accept_feature_request!
-    approval_uri = value_or_id(first_of_value(@json['result']))
-    return if approval_uri.nil? || unsupported_uri_scheme?(approval_uri) || non_matching_uri_hosts?(approval_uri, @account.uri)
-
-    collection_item = feature_request_from_object
-    collection_item.update!(approval_uri:, state: :accepted)
-
-    activity_json = ActiveModelSerializers::SerializableResource.new(collection_item, serializer: ActivityPub::AddFeaturedItemSerializer, adapter: ActivityPub::Adapter).to_json
-    ActivityPub::CollectionRawDistributionWorker.perform_async(activity_json, collection_item.collection_id)
-  end
-
   def accept_quote!(quote)
     approval_uri = value_or_id(first_of_value(@json['result']))
     return if unsupported_uri_scheme?(approval_uri) || non_matching_uri_hosts?(approval_uri, @account.uri) || quote.quoted_account != @account || !quote.status.local? || !quote.pending?

@@ -30,7 +30,6 @@ import { quoteItemState } from '../status/boost_button_utils';
 import { selectStatusConditions } from '@/mastodon/selectors/statuses';
 
 
-
 const messages = defineMessages({
   delete: { id: 'status.delete', defaultMessage: 'Delete' },
   redraft: { id: 'status.redraft', defaultMessage: 'Delete & re-draft' },

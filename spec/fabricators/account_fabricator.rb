@@ -38,7 +38,3 @@ end
 Fabricator(:remote_account, from: :account) do
   domain 'example.com'
 end
-
-Fabricator(:remote_account, from: :account) do
-  domain 'example.com'
-end

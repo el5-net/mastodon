@@ -75,12 +75,4 @@ class Scheduler::SelfDestructScheduler
       adapter: ActivityPub::Adapter
     ).as_json
   end
-
-  def deletion_payload(account)
-    ActiveModelSerializers::SerializableResource.new(
-      account,
-      serializer: ActivityPub::DeleteActorSerializer,
-      adapter: ActivityPub::Adapter
-    ).as_json
-  end
 end
